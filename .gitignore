@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Variáveis de ambiente / credenciais
+.env
+.env.*
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dados brutos: ignorados por padrão
+data/raw/*
+!data/raw/.gitkeep
+# Exceção: dataset escolhido (CC BY 4.0), versionado com atribuição
+!data/raw/dropout_academic_success/
+data/raw/dropout_academic_success/*
+!data/raw/dropout_academic_success/data.csv

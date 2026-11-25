@@ -1,0 +1,101 @@
+{
+  "model": "Random Forest",
+  "config": {
+    "n_estimators": 100,
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "bootstrap": true,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "environment": {
+    "python": "3.13.15",
+    "scikit_learn": "1.9.1"
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "n_train": 3539,
+    "n_test": 885
+  },
+  "accuracy": 0.7615819209039548,
+  "macro": {
+    "precision": 0.6981261167633009,
+    "recall": 0.655716492529267,
+    "f1": 0.6602510255212158
+  },
+  "weighted": {
+    "precision": 0.7382644717999305,
+    "recall": 0.7615819209039548,
+    "f1": 0.7387533284061358
+  },
+  "per_class": {
+    "Dropout": {
+      "precision": 0.7833935018050542,
+      "recall": 0.7640845070422535,
+      "f1": 0.7736185383244206,
+      "support": 284
+    },
+    "Enrolled": {
+      "precision": 0.525,
+      "recall": 0.2641509433962264,
+      "f1": 0.3514644351464435,
+      "support": 159
+    },
+    "Graduate": {
+      "precision": 0.7859848484848485,
+      "recall": 0.9389140271493213,
+      "f1": 0.8556701030927835,
+      "support": 442
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Dropout",
+      "Enrolled",
+      "Graduate"
+    ],
+    "counts": [
+      [
+        217,
+        20,
+        47
+      ],
+      [
+        51,
+        42,
+        66
+      ],
+      [
+        9,
+        18,
+        415
+      ]
+    ],
+    "row_percent": [
+      [
+        76.40845070422534,
+        7.042253521126761,
+        16.549295774647888
+      ],
+      [
+        32.075471698113205,
+        26.41509433962264,
+        41.509433962264154
+      ],
+      [
+        2.0361990950226243,
+        4.072398190045249,
+        93.89140271493213
+      ]
+    ]
+  },
+  "majority_baseline": {
+    "class": "Graduate",
+    "accuracy": 49.94350282485876
+  }
+}
